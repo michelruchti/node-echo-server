@@ -17,7 +17,7 @@ app.use((req, res, next) => {
   const ip = req.ip;
 
   // Log request details
-  console.log(`[${timestamp}] ${method} ${url} - Body:`, body);
+  console.log(`[${timestamp}] ${method} ${url} - Headers:`, headers);
 
   // Pass control to the next middleware
   res.json({
